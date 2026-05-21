@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "A lightweight Markdown blog built with Astro.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "new": "node ./scripts/new-post.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jared-Hanson/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jared-Hanson/blog/issues"
+  },
+  "homepage": "https://github.com/Jared-Hanson/blog#readme",
+  "dependencies": {
+    "@fontsource/newsreader": "^5.2.10",
+    "@fontsource/work-sans": "^5.2.8",
+    "astro": "^6.3.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}

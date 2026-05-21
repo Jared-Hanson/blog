@@ -1,0 +1,35 @@
+---
+import { formatDate } from "../lib/format";
+
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  date: Date;
+  updated?: Date;
+  tags?: string[];
+}
+
+const { href, title, description, date, updated, tags = [] } = Astro.props;
+---
+
+<article class="post-card">
+  <p class="post-card__date">
+    <time datetime={date.toISOString()}>{formatDate(date)}</time>
+    {updated && (
+      <span class="post-card__updated">Updated {formatDate(updated)}</span>
+    )}
+  </p>
+  <h2>
+    <a href={href}>{title}</a>
+  </h2>
+  <p class="post-card__description">{description}</p>
+  {
+    tags.length > 0 && (
+      <ul class="tag-list" aria-label="Tags">
+        {tags.map((tag) => <li>{tag}</li>)}
+      </ul>
+    )
+  }
+</article>
+
