@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "check": "astro check",
-    "new": "node ./scripts/new-post.mjs"
+    "new": "node ./scripts/new-post.mjs",
+    "generate-types": "wrangler types",
+    "deploy": "npm run build && wrangler deploy"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/Jared-Hanson/blog#readme",
   "dependencies": {
+    "@astrojs/cloudflare": "^13.5.3",
     "@fontsource/newsreader": "^5.2.10",
     "@fontsource/work-sans": "^5.2.8",
     "astro": "^6.3.6"
@@ -28,6 +31,10 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
     "@types/node": "^25.9.1",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.93.0"
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }
