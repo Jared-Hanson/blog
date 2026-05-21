@@ -16,7 +16,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BaseLayout title={`${post.data.title} | Blog`} description={post.data.description}>
+<BaseLayout title={`${post.data.title} | Jareds Thoughts`} description={post.data.description}>
   <article class="essay">
     <header class="essay__header">
       <p class="eyebrow">Essay</p>
@@ -49,4 +49,3 @@ const { Content } = await render(post);
     </div>
   </article>
 </BaseLayout>
-

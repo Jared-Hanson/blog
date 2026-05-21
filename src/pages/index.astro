@@ -8,36 +8,19 @@ const recentPosts = posts.slice(0, 6);
 ---
 
 <BaseLayout
-  title="Blog"
+  title="Jareds Thoughts"
   description="A simple blog for essays, notes, and ideas written in Markdown."
 >
-  <section class="hero">
-    <div class="hero__copy">
-      <p class="eyebrow">Plain-text publishing</p>
-      <h1>A blog that stays out of the way.</h1>
-      <p class="lede">
-        Essays, notes, and experiments written in Markdown and published with
-        almost no ceremony.
-      </p>
-      <div class="hero__actions">
-        <a class="button button--primary" href="/archive">Browse the archive</a>
-        <a class="button button--secondary" href="https://github.com/Jared-Hanson/blog">View the repo</a>
-      </div>
-    </div>
-
-    <aside class="hero__aside">
-      <p class="hero__aside-label">Writing flow</p>
-      <ol>
-        <li>Create a post with <code>npm run new -- "Post title"</code></li>
-        <li>Write in <code>src/content/posts/*.md</code></li>
-        <li>Push to GitHub and let Cloudflare publish it</li>
-      </ol>
-    </aside>
+  <section class="home-intro">
+    <h1>Jareds Thoughts</h1>
+    <p class="lede">
+      My attempt at stretching my brain through writing.
+    </p>
   </section>
 
-  <section class="section-heading">
-    <p class="eyebrow">Recent posts</p>
-    <h2>Fresh writing without a content dashboard.</h2>
+  <section class="home-section-header">
+    <h2>Recent posts</h2>
+    <a href="/archive">See the full index</a>
   </section>
 
   <section class="post-grid">
@@ -53,4 +36,3 @@ const recentPosts = posts.slice(0, 6);
     ))}
   </section>
 </BaseLayout>
-

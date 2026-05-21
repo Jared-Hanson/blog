@@ -130,7 +130,6 @@ code {
   color: var(--accent);
 }
 
-.hero,
 .section-heading,
 .post-card,
 .archive-list,
@@ -141,20 +140,11 @@ code {
   box-shadow: var(--shadow);
 }
 
-.hero,
 .essay {
   border-radius: calc(var(--radius) + 0.25rem);
 }
 
-.hero {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: minmax(0, 1.55fr) minmax(17rem, 0.9fr);
-  margin-bottom: 2rem;
-  padding: 2rem;
-}
-
-.hero__copy h1,
+.home-intro h1,
 .section-heading h1,
 .section-heading h2,
 .essay h1,
@@ -166,51 +156,12 @@ code {
   margin: 0;
 }
 
-.hero__copy h1 {
-  font-size: clamp(3rem, 8vw, 5.6rem);
-  max-width: 10ch;
-}
-
-.hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 2rem;
-}
-
-.button {
-  border-radius: 999px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.8rem 1.2rem;
-  text-decoration: none;
-}
-
-.button--primary {
-  background: var(--text);
-  color: #fff8ef;
-}
-
-.button--secondary {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid var(--line);
-}
-
-.hero__aside,
 .section-heading,
 .archive-list,
 .post-card {
   border-radius: var(--radius);
 }
 
-.hero__aside {
-  background:
-    linear-gradient(180deg, rgba(255, 251, 245, 0.88), rgba(239, 228, 212, 0.82));
-  border: 1px solid var(--line);
-  padding: 1.4rem;
-}
-
-.hero__aside-label,
 .eyebrow {
   color: var(--accent);
   font-size: 0.75rem;
@@ -220,9 +171,40 @@ code {
   text-transform: uppercase;
 }
 
-.hero__aside ol {
+.home-intro {
+  margin: 0 0 2.4rem;
+  max-width: 42rem;
+  padding: 1rem 0 0.5rem;
+}
+
+.home-intro h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  max-width: 10ch;
+}
+
+.home-section-header {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 0 1rem;
+}
+
+.home-section-header h2 {
+  font-family: "Newsreader", serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
   margin: 0;
-  padding-left: 1.25rem;
+}
+
+.home-section-header a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.home-section-header a:hover {
+  color: var(--accent);
 }
 
 .section-heading {
@@ -415,7 +397,6 @@ code {
 
   .site-header,
   .site-footer,
-  .hero,
   .archive-list li {
     display: block;
   }
@@ -424,12 +405,9 @@ code {
     margin-top: 1rem;
   }
 
-  .hero {
-    padding: 1.4rem;
-  }
-
-  .hero__aside {
-    margin-top: 0.5rem;
+  .home-section-header {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .post-grid {
