@@ -7,10 +7,7 @@ tags:
   - writing
   - ai
 ---
-
-# Why I choose to write
-
-Each day, I stand in the shower left arm pressed against my back, hand tucked against my right elbow. My internal dialogue hums with self-described brilliance. Clean, perfect ideas about life rise with the steam, condense onto the tile, and swirl into the drain. I spend the majority of my wash in this state.
+Each day, I stand in the shower left arm pressed against my back, hand tucked against my right elbow. My internal dialogue hums with self-described brilliance. What I imagine to be clean, perfect ideas about life rise with the steam, condense onto the tile, and swirl into the drain. I spend the majority of my wash in this state.
 
 The moment I try to express these thoughts in written words, it all crashes down to reality. My web of neurons is in a constant superposition of all my thoughts and emotions. I trick myself into believing it represents a thread of coherent ideas. Yet, untangling and expressing those ideas within the format, syntax and demands of written language has been a significant challenge for me.
 
