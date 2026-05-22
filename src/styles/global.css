@@ -332,6 +332,11 @@ code {
   margin-top: 1.2rem;
 }
 
+.essay__tags {
+  margin: 0 0 1.25rem;
+  max-width: var(--reading-width);
+}
+
 .essay__content {
   font-size: 1.1rem;
   max-width: var(--reading-width);

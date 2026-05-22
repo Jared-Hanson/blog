@@ -38,7 +38,7 @@ const { Content } = await render(post);
 
     {
       post.data.tags.length > 0 && (
-        <ul class="tag-list" aria-label="Tags">
+        <ul class="tag-list essay__tags" aria-label="Tags">
           {post.data.tags.map((tag: string) => <li>{tag}</li>)}
         </ul>
       )
